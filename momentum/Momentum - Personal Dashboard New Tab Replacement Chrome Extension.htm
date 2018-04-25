@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://momentumdash.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Momentum - Personal Dashboard New Tab Replacement Chrome Extension</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@momentumdash">
+        <meta name="twitter:title" content="Momentum Dashboard">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://momentumdash.com/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://momentumdash.com/apple-touch-icon-152x152.png">
+        <link rel="icon" type="image/png" href="https://momentumdash.com/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="https://momentumdash.com/favicon-16x16.png" sizes="16x16">
+        <meta name="application-name" content="Momentum Dash">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+        <meta name="twitter:description" content="Replace new tab page with a personal dashboard featuring todo, weather, and inspiration.">
+        <meta name="twitter:image" content="http://momentumdash.com/blog/images/user-accounts1.jpg">
+
+        <!-- For Facebook sharing (#DRY 3 places) -->
+        <meta property="og:title" content="Momentum Dashboard">
+        <meta property="og:description" content="Replace new tab page with a personal dashboard featuring todo, weather, and inspiration.">
+        <meta property="og:image" content="https://momentumdash.com/img/facebook-preview.jpeg">
+        <meta property="og:type" content="website">
+
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/laookkfknpbbblfpciffpaejjkokdgca">
+        <!-- <link href="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/font-awesome.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <link rel="stylesheet" href="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/style.css">
+        <link rel="stylesheet" href="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/home.css">
+
+
+    </head>
+    <body class="v2" style="zoom: 1; background: #444;">
+
+        <div id="widgets">
+            <div id="top-left">
+                <header class="header has-background">
+</header>
+            </div>
+            <div id="center-above"></div>
+            <div id="center"><div id="centerclock" style="opacity: 1;">
+            <h1 class="time">18:00</h1>
+            <span class="format">AM</span>
+        </div><div id="greeting" style="opacity: 1;">
+          <h2 class="greeting">Good <span class="period">evening</span>, <span class="name">smarty pants</span>.</h2>
+        </div></div>
+            <div id="center-below"><div id="install" class="font-light" style="opacity: 1;">
+            <p class="features">Daily <span class="feature" style="width: 149px; opacity: 1;">photography</span> on your new tab page.</p>
+
+            <p class="call-to-action install" style="display: block;">
+                <a href="https://momentumdash.com/" class="install-app button button-load font-medium"><img src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/plus.svg" class="icon icon-add"> Add Momentum to Chrome</a>
+            </p>
+
+            <p class="call-to-action not-chrome">
+                Momentum is available on Chrome or Firefox.<br>
+                <a target="_blank" href="https://www.google.com/intl/en_ca/chrome/browser/" class="button button-small button-left font-medium"><i class="fa fa-download"></i> Get Chrome</a> <a target="_blank" href="https://www.mozilla.org/en-US/firefox/new/" class="button button-small button-right font-medium"><i class="fa fa-download"></i> Get Firefox</a>
+
+            </p>
+
+            <p class="call-to-action install-complete">
+                <i class="fa fa-check"></i> Momentum is installed. Open a new tab to launch.
+                <span class="bottom-message">
+                    Having trouble? <a href="https://momentumdash.com/help" class="button button-small-inline font-medium"><i class="fa fa-life-ring"></i> Help</a>
+                </span>
+            </p>
+
+            <p class="call-to-action install-failure">
+                Momentum had trouble installing.<br>
+                <a href="https://momentumdash.com/" class="button button-small button-left button-inline font-medium try-again"><img src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/plus.svg" class="icon icon-add"> Try Again</a>
+                <a href="https://momentumdash.com/help" class="button button-small button-right button-inline font-medium"><i class="fa fa-life-ring"></i>Help</a>
+            </p>
+
+            <p class="call-to-action firefox">
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/momentumdash/" class="button button-load font-medium"><img src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/plus.svg" class="icon icon-add"> Add Momentum to Firefox</a>
+            </p>
+        </div></div>
+            <div id="bottom"></div>
+        </div>
+
+        <!-- Handlesbars Templates (Move to external files) -->
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/2507085.js" type="text/javascript" id="hs-analytics"></script><script async="" src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/analytics.js"></script><script id="message-template" type="text/x-handlebars-template">
+            <h4>{{title}}</h4>
+            <p>
+                <span class="message">{{message}}</span>
+            </p>
+            <a href="" class="hide"><span>✕</span></a>
+        </script>
+
+        <script id="background-template" type="text/x-handlebars-template">
+            <li style="background-image: url('backgrounds/{{filename}}')"></li>
+        </script>
+
+        <script id="background-info-template" type="text/x-handlebars-template">
+            <span class="title">{{title}}</span>
+            {{#if sourceUrl}}
+                <span class="source"><a href="{{sourceUrl}}">{{source}}</a></span>
+            {{else}}
+                <span class="source">{{source}}</span>
+            {{/if}}
+       </script>
+
+        <script id="centerclock-template" type="text/x-handlebars-template">
+            <h1 class="time">{{time}}</h1>
+            <span class="format">AM</span>
+        </script>
+
+        <script id="greeting-template" type="text/x-handlebars-template">
+          <h2 class="greeting">Good <span class="period">{{period}}</span>, <span class="name">{{name}}</span>.</h2>
+        </script>
+
+        <script id="install-template" type="text/x-handlebars-template">
+            <!-- <p class="features">Daily <span class="feature"></span> on your new tab page.</p> -->
+
+            <p class="call-to-action install">
+                <a href="" class="install-app button button-load font-medium"><img src="https://momentumdash.com/icon/plus.svg" class="icon icon-add"> Add Momentum to Chrome</a>
+            </p>
+
+            <p class="call-to-action not-chrome">
+                Momentum is available on Chrome or Firefox.<br>
+                <a target="_blank" href="https://www.google.com/intl/en_ca/chrome/browser/" class="button button-small button-left font-medium"><i class="fa fa-download"></i> Get Chrome</a> <a target="_blank" href="https://www.mozilla.org/en-US/firefox/new/" class="button button-small button-right font-medium"><i class="fa fa-download"></i> Get Firefox</a>
+
+            </p>
+
+            <p class="call-to-action install-complete">
+                <i class="fa fa-check"></i> Momentum is installed. Open a new tab to launch.
+                <span class="bottom-message">
+                    Having trouble? <a href="/help" class="button button-small-inline font-medium"><i class="fa fa-life-ring"></i> Help</a>
+                </span>
+            </p>
+
+            <p class="call-to-action install-failure">
+                Momentum had trouble installing.<br>
+                <a href="" class="button button-small button-left button-inline font-medium try-again"><img src="/icon/plus.svg" class="icon icon-add"> Try Again</a>
+                <a href="/help" class="button button-small button-right button-inline font-medium"><i class="fa fa-life-ring"></i>Help</a>
+            </p>
+
+            <p class="call-to-action firefox">
+                <a href="https://addons.mozilla.org/en-US/firefox/addon/momentumdash/" class="button button-load font-medium"><img src="/icon/plus.svg" class="icon icon-add"> Add Momentum to Firefox</a>
+            </p>
+        </script>
+
+        <!-- Libraries -->
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/jquery.min.js"></script>
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/underscore-min.js"></script>
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/backbone-min.js"></script>
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/backbone.localStorage-min.js"></script>
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/handlebars.js"></script>
+
+        <!-- App -->
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/app.js"></script>
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/background.js"></script>
+        <script src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/main.js"></script>
+        <script type="text/javascript" id="hs-script-loader" async="" defer="" src="./Momentum - Personal Dashboard New Tab Replacement Chrome Extension_files/2507085(1).js"></script>
+
+    
+
+</body></html>
