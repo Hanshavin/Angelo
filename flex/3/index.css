@@ -1,0 +1,50 @@
+body,
+figure {
+  margin: 0;
+}
+.header {
+  background: #3f4b83;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.header .left {
+  background: #58d5d3;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.header .left .logo {
+  width: 200px;
+  height: 40px;
+  background: #f8d5f0;
+}
+.header .left .menu {
+  display: flex;
+  margin-left: 60px;
+}
+.header .left .menu .item {
+  background: #fff;
+  width: 100px;
+  height: 30px;
+}
+.header .left .menu .item.meed {
+  background: #f8d5f0;
+}
+.header .right {
+  background: #f8d5f0;
+  width: 200px;
+  height: 60px;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+.wrapper .left {
+  width: 50%;
+  background: #f8d5f0;
+}
+.wrapper .right {
+  width: 50%;
+  background: #41a4c3;
+}

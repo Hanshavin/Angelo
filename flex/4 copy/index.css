@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.wrapper .top {
+  flex: 1;
+  display: flex;
+}
+.wrapper .top .left {
+  flex: 1;
+  background: #f8d5f0;
+}
+.wrapper .top .meed {
+  flex: 1;
+  background: #58d5d3;
+}
+.wrapper .top .right {
+  flex: 1;
+  background: #41a4c3;
+}
+.wrapper .bottom {
+  flex: 1;
+  display: flex;
+}
+.wrapper .bottom .left {
+  flex: 1;
+  background: #3f4b83;
+}
+.wrapper .bottom .right {
+  flex: 1;
+  background: #f8d5f0;
+}

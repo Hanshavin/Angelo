@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+.left {
+  width: 50%;
+  background: #f8d5f0;
+  display: flex;
+}
+.left .box {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  background: #3f4b83;
+}
+.right {
+  width: 50%;
+  background: #41a4c3;
+  display: flex;
+}
+.right .box {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  background: #58d5d3;
+}
