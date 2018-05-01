@@ -1,71 +1,20 @@
 body {
   margin: 0;
 }
+.header {
+  background: #58d5d3;
+  position: fixed;
+  height: 70px;
+  width: 100%;
+}
 .wrapper {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
-}
-.wrapper .top {
-  flex: 1;
-  display: flex;
-}
-.wrapper .top .left {
-  flex: 1;
-  background: #f8d5f0;
-  display: flex;
-}
-.wrapper .top .left .box {
-  margin: auto;
-  height: 70px;
-  width: 70px;
-  background: #58d5d3;
-}
-.wrapper .top .meed {
-  flex: 1;
-  background: #58d5d3;
-  display: flex;
-}
-.wrapper .top .meed .box {
-  margin: auto;
-  height: 70px;
-  width: 70px;
-  background: #41a4c3;
-}
-.wrapper .top .right {
-  flex: 1;
-  background: #41a4c3;
-  display: flex;
-}
-.wrapper .top .right .box {
-  margin: auto;
-  height: 70px;
-  width: 70px;
-  background: #f8d5f0;
-}
-.wrapper .bottom {
-  flex: 1;
-  display: flex;
-}
-.wrapper .bottom .left {
-  flex: 1;
   background: #3f4b83;
-  display: flex;
 }
-.wrapper .bottom .left .box {
-  margin: auto;
-  height: 70px;
-  width: 70px;
-  background: #f8d5f0;
-}
-.wrapper .bottom .right {
-  flex: 1;
-  background: #f8d5f0;
-  display: flex;
-}
-.wrapper .bottom .right .box {
-  margin: auto;
-  height: 70px;
-  width: 70px;
-  background: #3f4b83;
+.footer {
+  background: #58d5d3;
+  position: fixed;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
 }
